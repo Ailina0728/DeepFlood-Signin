@@ -172,7 +172,7 @@ def session_login(user, password, api_base_url, client_key):
         print(f"验证码错误: {e}")
         return None
 
-    session = requests.Session(impersonate="chrome110")
+    session = requests.Session(impersonate="chrome120")
     session.get("https://www.deepflood.com/signIn.html")
 
     data = {
@@ -475,3 +475,4 @@ if __name__ == "__main__":
             print("所有Cookie已成功保存")
         except Exception as e:
             print(f"保存Cookie变量异常: {e}")
+
