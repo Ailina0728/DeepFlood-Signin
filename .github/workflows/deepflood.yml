@@ -59,7 +59,9 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           
           # 通知推送配置
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          TG_THREAD_ID: ${{ secrets.TG_THREAD_ID }}
+          #TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          #TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          #TG_THREAD_ID: ${{ secrets.TG_THREAD_ID }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          BARK_ICON: ${{ secrets.BARK_ICON }}
         run: python deepflood_sign.py
